@@ -3,9 +3,10 @@
       type="text"
       class="border-noround forms-control col-12 "
       placeholder="Buscar.."
+      autofocus
       [(ngModel)]="filterpost"
       name="filterpost"
     />
-    <app-heroes *ngFor="let obj of randomlistheroe | filtro: filterpost" [heroe]="obj"  class="col-3" (click)="openDialog(obj)"></app-heroes>
+    <app-heroes *ngFor="let obj of randomlistheroe | filtro: filterpost.toLowerCase() " [heroe]="obj"  class="col-3" (click)="openDialog(obj)"></app-heroes>
 
 </div>

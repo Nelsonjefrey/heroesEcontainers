@@ -1,14 +1,25 @@
-<div>
+<div class="example-card">
   <h2 mat-dialog-title class="text-center font-bold"> {{ data.name}}</h2>
-  <div mat-dialog-content>
-    <img mat-card-image class="example-header-image" src="{{data.images.md}}" alt="{{data.name}}">
-    <small mat-dialog-title>Intelligence: <label class="font-bold">{{ data.powerstats.intelligence }}</label></small>
-    <small mat-dialog-title>Speed: <label class="font-bold"> {{ data.powerstats.speed }}</label></small>
-    <small mat-dialog-title>Power: <label class="font-bold"> {{ data.powerstats.power}}</label> </small>
-    <small mat-dialog-title>Gender: <label class="font-bold"> {{ data.appearance.gender }}</label> </small>
-    <small mat-dialog-title>Race: <label class="font-bold"> {{ data.appearance.race ? data.appearance.race : 'N/N' }}</label></small>
-  </div>
-  <div mat-dialog-actions>
-    <button mat-button mat-dialog-close>Close</button>
+  <div mat-dialog-content >
+
+    <img mat-card-image class="example-header-image align-content-center" src="{{data.images.lg}}" alt="{{data.name}}">
+    <div class="grid">
+      <div class="col-4">
+        <h5 mat-dialog-title class="m-0 p-0">Intelligence: <label class="font-bold">{{ data.powerstats.intelligence }}</label></h5>
+        <h5 mat-dialog-title class="m-0 p-0">Speed: <label class="font-bold"> {{ data.powerstats.speed }}</label></h5>
+        <h5 mat-dialog-title class="m-0 p-0">Power: <label class="font-bold"> {{ data.powerstats.power}}</label> </h5>
+        <h5 mat-dialog-title class="m-0 p-0">Gender: <label class="font-bold"> {{ data.appearance.gender }}</label> </h5>
+        <h5 mat-dialog-title class="m-0 p-0">Race: <label class="font-bold"> {{ data.appearance.race ? data.appearance.race : 'N/N' }}</label></h5>
+        <h5 mat-dialog-title class="m-0 p-0">Combat: <label class="font-bold"> {{ data.powerstats.combat ? data.powerstats.combat : 'N/N' }}</label></h5>
+      </div>
+      <div class="col-8">
+        <h5 mat-dialog-title class="m-0 p-0">Full Name: <label class="font-bold">{{ data.biography.fullName }}</label></h5>
+        <h5 mat-dialog-title class="m-0 p-0">Aliases: <label class="font-bold"> {{ data.biography.aliases }}</label></h5>
+        <h5 mat-dialog-title class="m-0 p-0">PlaceOfBirth: <label class="font-bold"> {{ data.biography.placeOfBirth}}</label> </h5>
+        <h5 mat-dialog-title class="m-0 p-0">Publisher: <label class="font-bold"> {{ data.biography.publisher }}</label> </h5>
+        <h5 mat-dialog-title class="m-0 p-0">Occupation: <label class="font-bold"> {{ data.work.occupation ? data.work.occupation : 'N/N' }}</label></h5>
+      </div>
+    </div>
+
   </div>
 </div>
