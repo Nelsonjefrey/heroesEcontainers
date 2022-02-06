@@ -1,13 +1,11 @@
 <div class="grid">
-  <input
-    type="text"
-    class="forms-control col"
-    placeholder="Buscar.."
-    [(ngModel)]="filterpost"
-    name="filterpost"
-  />
-  <div class="col-4">
-    <app-heroes *ngFor="let obj of randomlistheroe | filtro: filterpost" [heroe]="obj"></app-heroes>
-  </div>
+    <input
+      type="text"
+      class="forms-control col-12"
+      placeholder="Buscar.."
+      [(ngModel)]="filterpost"
+      name="filterpost"
+    />
+    <app-heroes *ngFor="let obj of randomlistheroe | filtro: filterpost" [heroe]="obj" class="col-3"></app-heroes>
 
 </div>

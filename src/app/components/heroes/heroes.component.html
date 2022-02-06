@@ -1,12 +1,19 @@
 
     <mat-card  class="example-card">
-      <mat-card-header>
+      <!--<mat-card-header>
         <mat-card-subtitle></mat-card-subtitle>
         <a> <mat-card-title></mat-card-title> </a>
-      </mat-card-header>
-      <img mat-card-image src="{{heroe.images.lg}}" alt="{{heroe.name}}">
+      </mat-card-header>-->
+      <img mat-card-image class="example-header-image" src="{{heroe.images.lg}}" alt="{{heroe.name}}">
       <mat-card-content>
-        <p>{{heroe.name}}</p>
+        <h2 class="lg:justify-content-center font-bold">{{heroe.name}}</h2>
+        <div class="grid p-2">
+          <small class="col-12 p-0 m-0">Intelligence: <label class="font-bold">{{ heroe.powerstats.intelligence }}</label></small>
+          <small class="col-12 p-0 m-0">Speed: <label class="font-bold"> {{ heroe.powerstats.speed }}</label></small>
+          <small class="col-12 p-0 m-0">Power: <label class="font-bold"> {{ heroe.powerstats.power}}</label> </small>
+          <small class="col-12 p-0 m-0">Gender: <label class="font-bold"> {{ heroe.appearance.gender }}</label> </small>
+          <small class="col-12 p-0 m-0">Race: <label class="font-bold"> {{ heroe.appearance.race ? heroe.appearance.race : 'N/N' }}</label></small>
+        </div>
       </mat-card-content>
     </mat-card>
 
