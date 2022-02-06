@@ -10,6 +10,9 @@ import { HttpClientModule} from "@angular/common/http";
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { FiltroPipe } from './pipes/filtro.pipe';
 import { FormsModule } from "@angular/forms";
+import { HeroesDetalleComponent } from './components/heroes-detalle/heroes-detalle.component';
+import { MatDialogModule } from "@angular/material/dialog";
+
 
 @NgModule({
   declarations: [
@@ -17,14 +20,17 @@ import { FormsModule } from "@angular/forms";
     NavbarComponent,
     HomeComponent,
     HeroesComponent,
-    FiltroPipe
+    FiltroPipe,
+    HeroesDetalleComponent
   ],
   imports: [
     BrowserModule,
     MatCardModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,14 @@
+<div>
+  <h2 mat-dialog-title class="text-center font-bold"> {{ data.name}}</h2>
+  <div mat-dialog-content>
+    <img mat-card-image class="example-header-image" src="{{data.images.md}}" alt="{{data.name}}">
+    <small mat-dialog-title>Intelligence: <label class="font-bold">{{ data.powerstats.intelligence }}</label></small>
+    <small mat-dialog-title>Speed: <label class="font-bold"> {{ data.powerstats.speed }}</label></small>
+    <small mat-dialog-title>Power: <label class="font-bold"> {{ data.powerstats.power}}</label> </small>
+    <small mat-dialog-title>Gender: <label class="font-bold"> {{ data.appearance.gender }}</label> </small>
+    <small mat-dialog-title>Race: <label class="font-bold"> {{ data.appearance.race ? data.appearance.race : 'N/N' }}</label></small>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+  </div>
+</div>
