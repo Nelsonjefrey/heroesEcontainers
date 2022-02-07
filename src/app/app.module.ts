@@ -12,6 +12,8 @@ import { FiltroPipe } from './pipes/filtro.pipe';
 import { FormsModule } from "@angular/forms";
 import { HeroesDetalleComponent } from './components/heroes-detalle/heroes-detalle.component';
 import { MatDialogModule } from "@angular/material/dialog";
+import {MatFormFieldModule} from "@angular/material/form-field";
+
 
 
 @NgModule({
@@ -21,7 +23,7 @@ import { MatDialogModule } from "@angular/material/dialog";
     HomeComponent,
     HeroesComponent,
     FiltroPipe,
-    HeroesDetalleComponent
+    HeroesDetalleComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,9 @@ import { MatDialogModule } from "@angular/material/dialog";
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatFormFieldModule
+
 
   ],
   providers: [],

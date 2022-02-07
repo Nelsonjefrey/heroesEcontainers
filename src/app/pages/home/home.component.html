@@ -1,12 +1,12 @@
 <div class="grid">
     <input
       type="text"
-      class="border-noround forms-control col-12 "
-      placeholder="Buscar.."
+      class="col-12 border-2 mb-3 p-2"
+      style="border-radius: 8px"
+      placeholder="Buscar..."
       autofocus
       [(ngModel)]="filterpost"
       name="filterpost"
     />
     <app-heroes *ngFor="let obj of randomlistheroe | filtro: filterpost.toLowerCase() " [heroe]="obj"  class="col-3" (click)="openDialog(obj)"></app-heroes>
-
 </div>

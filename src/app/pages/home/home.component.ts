@@ -12,6 +12,7 @@ import {HeroesDetalleComponent} from "../../components/heroes-detalle/heroes-det
 export class HomeComponent implements OnInit {
   public randomlistheroe:Heroe[] = [];
   filterpost: string = '' ;
+  value: any;
 
   constructor(private getservicesheroes: GetheroeslistService, public dialog: MatDialog) { }
 
